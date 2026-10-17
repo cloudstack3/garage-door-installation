@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Everlast Garage Doors | Garage Door Repair & Installation</title>
+
+<meta name="description" content="Everlast Garage Doors provides garage door repair, installation, opener repair, opener installation, spring repair and spring replacement in Franklin, TN. Call (615) 808-8806.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.7;
+}
+
+a{
+    color:#0000EE;
+    text-decoration:underline;
+}
+
+img{
+    max-width:100%;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:#0b1f33;
+    box-shadow:0 3px 15px rgba(0,0,0,.18);
+}
+
+.header-inner{
+    min-height:88px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    width:72px;
+    height:72px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:4px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ffffff;
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#ff9d2e;
+}
+
+/* HERO */
+
+.hero{
+    background:
+        linear-gradient(rgba(7,24,40,.88),rgba(7,24,40,.88)),
+        url("https://zeemapsimages.s3.amazonaws.com/1ab729636f5b07cfb1d3da9fa0e7154e-EverlastGarageDoors.png");
+    background-size:cover;
+    background-position:center;
+    padding:110px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.15;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#ff9d2e;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:800px;
+    margin:0 auto 25px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 26px;
+    margin:6px;
+    border-radius:5px;
+    font-weight:bold;
+    text-decoration:underline;
+    transition:.3s;
+}
+
+.btn-orange{
+    background:#ff9d2e;
+    color:#111;
+}
+
+.btn-orange:hover{
+    background:#fff;
+    color:#0000EE;
+}
+
+.btn-white{
+    background:#fff;
+    color:#0000EE;
+}
+
+.btn-white:hover{
+    background:#ff9d2e;
+    color:#111;
+}
+
+/* TRUST BAR */
+
+.trust-bar{
+    background:#ff9d2e;
+    padding:20px;
+}
+
+.trust-inner{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.trust-item{
+    font-weight:bold;
+    color:#111;
+}
+
+/* GENERAL SECTION */
+
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#0b1f33;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    max-width:750px;
+    margin:auto;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-card{
+    background:#0b1f33;
+    color:#fff;
+    padding:45px;
+    border-radius:12px;
+}
+
+.about-card h3{
+    color:#ff9d2e;
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.about-text h2{
+    font-size:35px;
+    color:#0b1f33;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:18px;
+}
+
+/* SERVICES */
+
+.services-section{
+    background:#eef2f6;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service-card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    border-top:5px solid #ff9d2e;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.service-icon{
+    width:55px;
+    height:55px;
+    background:#0b1f33;
+    color:#ff9d2e;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.service-card h3{
+    color:#0b1f33;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+/* WHY US */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.why-box{
+    padding:22px;
+    background:#fff;
+    border-left:4px solid #ff9d2e;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+}
+
+.why-box strong{
+    color:#0b1f33;
+}
+
+/* LOCATION */
+
+.location-section{
+    background:#0b1f33;
+    color:#fff;
+}
+
+.location-section h2{
+    color:#fff;
+}
+
+.location-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.contact-info{
+    background:#122b45;
+    padding:35px;
+    border-radius:10px;
+}
+
+.contact-info h3{
+    color:#ff9d2e;
+    font-size:27px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+}
+
+.contact-info a{
+    color:#fff;
+}
+
+.map-box{
+    overflow:hidden;
+    border-radius:10px;
+    min-height:400px;
+}
+
+.map-box iframe{
+    width:100%;
+    height:400px;
+    border:0;
+}
+
+/* BLOGGER */
+
+.blogger-section{
+    background:#f5f7fa;
+}
+
+.blogger-box{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.blogger-frame{
+    width:100%;
+    height:600px;
+    border:1px solid #ddd;
+    margin-top:20px;
+    border-radius:7px;
+}
+
+/* CTA */
+
+.cta{
+    background:
+        linear-gradient(rgba(11,31,51,.94),rgba(11,31,51,.94));
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:18px;
+}
+
+.cta h2 span{
+    color:#ff9d2e;
+}
+
+.cta p{
+    max-width:800px;
+    margin:0 auto 25px;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061522;
+    color:#fff;
+    padding:40px 20px;
+    text-align:center;
+}
+
+footer .footer-logo img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#fff;
+    padding:3px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:7px 0;
+}
+
+footer a{
+    color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .header-inner{
+        flex-direction:column;
+        padding:12px 0;
+    }
+
+    nav{
+        justify-content:center;
+        gap:14px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid,
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding:75px 15px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .trust-inner{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .about-text h2{
+        font-size:29px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container header-inner">
+
+        <div class="logo">
+            <a href="https://everlastgaragedoors.net"
+               target="_blank"
+               rel="noopener">
+                <img
+                src="https://everlastgaragedoors.net/wp-content/uploads/2026/09/everlast-logo-2014-1024x1024.png"
+                alt="Everlast Garage Doors">
+            </a>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Reliable <span>Garage Door Services</span>
+            in Franklin, TN
+        </h1>
+
+        <p>
+            Welcome to <strong>Everlast Garage Doors</strong>.
+            We provide professional garage door solutions for homeowners
+            in Franklin, Tennessee, including repair, installation,
+            opener services, and spring services.
+        </p>
+
+        <p>
+            When your garage door needs attention, you can contact our team
+            to discuss your specific service needs and available options.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a class="btn btn-orange"
+               href="tel:6158088806">
+                Call (615) 808-8806
+            </a>
+
+            <a class="btn btn-white"
+               href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"
+               target="_blank"
+               rel="noopener">
+                View Google Maps
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRUST BAR -->
+
+<div class="trust-bar">
+
+    <div class="container trust-inner">
+
+        <div class="trust-item">
+            ✓ Garage Door Repair
+        </div>
+
+        <div class="trust-item">
+            ✓ Garage Door Installation
+        </div>
+
+        <div class="trust-item">
+            ✓ Opener & Spring Services
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h2>Your Local Garage Door Company</h2>
+
+                <p>
+                    <strong>Everlast Garage Doors</strong> serves homeowners
+                    in Franklin, TN with practical garage door services.
+                    We understand that your garage door forms an important
+                    part of your home's everyday use.
+                </p>
+
+                <p>
+                    Whether your door has stopped working, your opener needs
+                    attention, or you are considering a new door, you can
+                    contact our team to discuss your needs.
+                </p>
+
+                <p>
+                    Our services include
+                    <strong><a href="https://everlastgaragedoors.net"style="color: aqua;">garage door repair</a></strong>,
+                    <strong>garage door installation</strong>,
+                    opener services, and spring services.
+                </p>
+
+                <a href="#contact">
+                    Contact Everlast Garage Doors
+                </a>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>Everlast Garage Doors</h3>
+
+                <p>
+                    Serving Franklin, Tennessee with garage door solutions
+                    for residential properties.
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>Address:</strong><br>
+                    1107 Battlewood St #222<br>
+                    Franklin, TN 37069
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:6158088806">
+                        (615) 808-8806
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services-section" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Garage Door Services</h2>
+
+            <p>
+                Explore our garage door services and contact Everlast Garage
+                Doors when you need assistance with your residential garage
+                door system.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">01</div>
+
+                <h3>Garage Door Repair</h3>
+
+                <p>
+                    Need help with a damaged, stuck, noisy, or malfunctioning
+                    garage door? Our <strong><a href="https://everlastgaragedoors.net"style="color: aqua;">garage door repair</a></strong>
+                    service focuses on identifying the problem and determining
+                    an appropriate solution.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">02</div>
+
+                <h3>Garage Door Installation</h3>
+
+                <p>
+                    Planning a new garage door? Our
+                    <strong><a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"style="color: aqua;">garage door installation</a></strong> service helps
+                    homeowners move from selecting a door to completing the
+                    installation process.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">03</div>
+
+                <h3>Garage Door Opener Repair</h3>
+
+                <p>
+                    When your automatic opener stops responding or operates
+                    incorrectly, <strong>garage door opener repair</strong>
+                    can address opener-related problems.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">04</div>
+
+                <h3>Garage Door Opener Installation</h3>
+
+                <p>
+                    Need a new automatic opener? Our
+                    <strong><a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"style="color: aqua;">garage door opener installation</a></strong> service
+                    can help you set up a suitable opener for your garage door.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">05</div>
+
+                <h3>Garage Door Spring Replacement</h3>
+
+                <p>
+                    Worn or broken springs can affect how your garage door
+                    operates. <strong>Garage door spring replacement</strong>
+                    may provide the appropriate solution when a spring reaches
+                    the end of its usable life.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">06</div>
+
+                <h3>Garage Door Spring Repair</h3>
+
+                <p>
+                    If your garage door has spring-related issues, our
+                    <strong><a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"style="color: aqua;">garage door spring repair</a></strong> service can
+                    help address the problem. Contact us before attempting
+                    spring work yourself.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Why Contact Everlast Garage Doors?</h2>
+
+            <p>
+                When you need garage door service, clear communication and
+                convenient contact options can make the process easier.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-box">
+                <strong>Local Franklin Service</strong>
+                <p>
+                    Our business is located in Franklin, TN and serves
+                    homeowners looking for garage door assistance.
+                </p>
+            </div>
+
+            <div class="why-box">
+                <strong>Multiple Garage Door Services</strong>
+                <p>
+                    Get help with repair, installation, openers, and spring
+                    service from one garage door company.
+                </p>
+            </div>
+
+            <div class="why-box">
+                <strong>Easy Phone Contact</strong>
+                <p>
+                    Call <a href="tel:6158088806">(615) 808-8806</a>
+                    to discuss your garage door needs.
+                </p>
+            </div>
+
+            <div class="why-box">
+                <strong>Convenient Online Information</strong>
+                <p>
+                    Visit our website and explore our connected local
+                    resources for additional information.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="location-section" id="location">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Find Everlast Garage Doors</h2>
+
+            <p>
+                Visit our location or use the Google Maps link to view
+                directions and business information.
+            </p>
+
+        </div>
+
+
+        <div class="location-grid">
+
+            <div class="contact-info">
+
+                <h3>Business Information</h3>
+
+                <p>
+                    <strong>Everlast Garage Doors</strong>
+                </p>
+
+                <p>
+                    <strong>Address:</strong><br>
+                    1107 Battlewood St #222,<br>
+                    Franklin, TN 37069
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:6158088806">
+                       (615) 808-8806
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Website:</strong><br>
+                    <a href="https://everlastgaragedoors.net"
+                       target="_blank"
+                       rel="noopener">
+                        everlastgaragedoors.net
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Google Maps:</strong><br>
+                    <a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"
+                       target="_blank"
+                       rel="noopener">
+                        View Business on Google Maps
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="map-box">
+
+                <iframe
+                    src="https://www.google.com/maps?q=1107+Battlewood+St+%23222,+Franklin,+TN+37069&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Contact Everlast Garage Doors</h2>
+
+            <p>
+                Have a garage door issue or planning a new installation?
+                Contact Everlast Garage Doors to discuss your requirements.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="contact-info"
+                 style="background:#0b1f33;color:#fff;">
+
+                <h3>Let's Talk About Your Garage Door</h3>
+
+                <p>
+                    Whether you need garage door repair, garage door
+                    installation, garage door opener repair, garage door
+                    opener installation, garage door spring replacement,
+                    or garage door spring repair, you can reach our team
+                    directly.
+                </p>
+
+                <br>
+
+                <a class="btn btn-orange"
+                   href="tel:6158088806">
+                    Call Now
+                </a>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <h2>Get in Touch</h2>
+
+                <p>
+                    <strong>Everlast Garage Doors</strong>
+                </p>
+
+                <p>
+                    1107 Battlewood St #222,<br>
+                    Franklin, TN 37069
+                </p>
+
+                <p>
+                    Phone:
+                    <a href="tel:6158088806">
+                        (615) 808-8806
+                    </a>
+                </p>
+
+                <p>
+                    Website:
+                    <a href="https://everlastgaragedoors.net"
+                       target="_blank"
+                       rel="noopener">
+                        https://everlastgaragedoors.net
+                    </a>
+                </p>
+
+                <p>
+                    Maps:
+                    <a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"
+                       target="_blank"
+                       rel="noopener">
+                        View on Google Maps
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Need <span>Garage Door Service?</span>
+        </h2>
+
+        <p>
+            Don't let a garage door problem disrupt your routine.
+            Contact Everlast Garage Doors to discuss your repair,
+            installation, opener, or spring service needs.
+        </p>
+
+        <a class="btn btn-orange"
+           href="tel:6158088806">
+            Call (615) 808-8806
+        </a>
+
+        <a class="btn btn-white"
+           href="https://everlastgaragedoors.net"
+           target="_blank"
+           rel="noopener">
+            Visit Our Website
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <a href="https://everlastgaragedoors.net"
+           target="_blank"
+           rel="noopener">
+
+            
+
+
+    <p>
+        <strong>Everlast Garage Doors</strong>
+    </p>
+
+    <p>
+        1107 Battlewood St #222, Franklin, TN 37069
+    </p>
+
+    <p>
+        <a href="tel:6158088806">
+            (615) 808-8806
+        </a>
+    </p>
+
+    <p>
+        <a href="https://everlastgaragedoors.net"
+           target="_blank"
+           rel="noopener">
+            everlastgaragedoors.net
+        </a>
+    </p>
+
+    <p>
+        <a href="https://maps.app.goo.gl/HWz1cRPENpbthXuDA"
+           target="_blank"
+           rel="noopener">
+            Google Maps
+        </a>
+    </p>
+
+    <p style="margin-top:20px;">
+        © 2026 Everlast Garage Doors. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
